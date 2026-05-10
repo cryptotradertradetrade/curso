@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm list *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\elisz\\\\projetos\\\\curso\\\\curso\" -Directory)",
+      "Bash(Select-Object Name)",
+      "mcp__neon__list_projects",
+      "mcp__neon__get_database_tables",
+      "Bash(dir drizzle *)",
+      "mcp__neon__run_sql_transaction"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "neon"
+  ],
+  "outputStyle": "default"
+}
