@@ -8,7 +8,19 @@
       "mcp__neon__list_projects",
       "mcp__neon__get_database_tables",
       "Bash(dir drizzle *)",
-      "mcp__neon__run_sql_transaction"
+      "mcp__neon__run_sql_transaction",
+      "Bash(Get-Content \"C:\\\\Users\\\\elisz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-elisz-projetos-curso-curso\\\\0d8ed472-a877-4573-8756-108ee6bad21d\\\\tasks\\\\big8r2k6d.output\" -Wait)",
+      "Bash(Select-String -Pattern \"Ready|Error|error|ENOENT|localhost\")",
+      "Bash(Get-Content \"C:\\\\Users\\\\elisz\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-elisz-projetos-curso-curso\\\\0d8ed472-a877-4573-8756-108ee6bad21d\\\\tasks\\\\bdq2ptf1o.output\" -Wait)",
+      "Bash(Select-String -Pattern \"Ready|Error|error|ENOENT|localhost|warn\")",
+      "Bash(Start-Process *)",
+      "PowerShell(Start-Process \"http://localhost:3000/dashboard\")",
+      "Read(//mnt/c/Users/elisz/projetos/curso/**)",
+      "Bash(ls node_modules/date-fns/index.js)",
+      "PowerShell(npx shadcn@latest add calendar popover card --yes 2>&1 | Select-Object -Last 20)",
+      "PowerShell($env:NODE_TLS_REJECT_UNAUTHORIZED=\"0\"; npx shadcn@latest add calendar popover card --yes 2>&1 | Select-Object -Last 30)",
+      "PowerShell($env:NODE_TLS_REJECT_UNAUTHORIZED=\"0\"; npx shadcn@latest add calendar popover card --yes 2>&1)",
+      "PowerShell(npm audit *)"
     ]
   },
   "enabledMcpjsonServers": [

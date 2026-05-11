@@ -4,6 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## UI e Estilo
+
+**OBRIGATÓRIO:** Todo código gerado deve SEMPRE consultar o arquivo `docs/ui.md` antes de criar ou modificar qualquer componente, página ou elemento visual. Este arquivo define os padrões de UI do projeto e deve ser seguido rigorosamente.
+
 ## Comandos
 
 ```bash
