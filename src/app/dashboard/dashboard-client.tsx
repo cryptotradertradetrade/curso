@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
@@ -24,30 +25,19 @@ type Workout = {
   finishedAt: Date | null;
 };
 
-const mockWorkouts: Workout[] = [
-  {
-    id: "1",
-    name: "Treino A — Peito e Tríceps",
-    startedAt: new Date(),
-    finishedAt: new Date(Date.now() + 60 * 60 * 1000),
-  },
-  {
-    id: "2",
-    name: "Treino B — Costas e Bíceps",
-    startedAt: new Date(),
-    finishedAt: null,
-  },
-];
+type Props = {
+  workouts: Workout[];
+  date: Date;
+};
 
-export function DashboardClient() {
-  const [date, setDate] = useState<Date>(new Date());
+export function DashboardClient({ workouts, date }: Props) {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
-
-  const workouts = mockWorkouts;
 
   function handleSelectDate(selected: Date | undefined) {
     if (selected) {
-      setDate(selected);
+      const iso = format(selected, "yyyy-MM-dd");
+      router.push(`/dashboard?date=${iso}`);
       setOpen(false);
     }
   }
@@ -77,7 +67,6 @@ export function DashboardClient() {
             mode="single"
             selected={date}
             onSelect={handleSelectDate}
-
           />
         </PopoverContent>
       </Popover>

@@ -20,7 +20,9 @@
       "PowerShell(npx shadcn@latest add calendar popover card --yes 2>&1 | Select-Object -Last 20)",
       "PowerShell($env:NODE_TLS_REJECT_UNAUTHORIZED=\"0\"; npx shadcn@latest add calendar popover card --yes 2>&1 | Select-Object -Last 30)",
       "PowerShell($env:NODE_TLS_REJECT_UNAUTHORIZED=\"0\"; npx shadcn@latest add calendar popover card --yes 2>&1)",
-      "PowerShell(npm audit *)"
+      "PowerShell(npm audit *)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\elisz\\\\projetos\\\\curso\\\\curso\\\\src\\\\lib\\\\data\")",
+      "Bash(Out-Null)"
     ]
   },
   "enabledMcpjsonServers": [

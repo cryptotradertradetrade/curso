@@ -8,6 +8,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **OBRIGATÓRIO:** Todo código gerado deve SEMPRE consultar o arquivo `docs/ui.md` antes de criar ou modificar qualquer componente, página ou elemento visual. Este arquivo define os padrões de UI do projeto e deve ser seguido rigorosamente.
 
+## Busca de Dados
+
+**OBRIGATÓRIO:** Todo código que busca dados deve SEMPRE seguir as regras definidas em `docs/busca_dados.md`. Em resumo:
+- Dados são buscados **exclusivamente em Server Components** via helpers em `src/lib/data/`.
+- Helpers usam **Drizzle ORM** — nunca SQL raw ou queries diretas fora dos helpers.
+- Todo acesso ao banco **filtra pelo `userId` da sessão autenticada** — o usuário só acessa seus próprios dados.
+
 ## Comandos
 
 ```bash
