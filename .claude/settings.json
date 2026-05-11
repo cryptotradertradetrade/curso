@@ -4,7 +4,10 @@
       "Bash(npm run *)",
       "Bash(taskkill /F /IM node.exe)",
       "PowerShell(Stop-Process -Name node -Force -ErrorAction SilentlyContinue)",
-      "Bash(npx drizzle-kit *)"
+      "Bash(npx drizzle-kit *)",
+      "Bash(git push *)",
+      "Bash(gh repo *)",
+      "Bash(git remote *)"
     ]
   }
 }
